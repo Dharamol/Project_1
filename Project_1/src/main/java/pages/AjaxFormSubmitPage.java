@@ -19,7 +19,7 @@ public class AjaxFormSubmitPage {
 	@FindBy(id="subject")
 	WebElement SubjectLine;
 	
-	@FindBy(id="description")
+	@FindBy(id="description") 
 	WebElement DescriptionLine;
 
 	@FindBy(xpath="//input[@class='btn btn-primary']")
