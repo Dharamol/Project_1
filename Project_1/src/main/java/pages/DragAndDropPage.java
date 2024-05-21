@@ -7,12 +7,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import base.DriverInitializer;
+import util.WaitUtil;
 
 public class DragAndDropPage extends DriverInitializer {
 	
 	
 	WebDriver driver;
 	Actions action;
+	WaitUtil wait;
 	
 	public DragAndDropPage(WebDriver driver)
 	{
@@ -29,8 +31,14 @@ public class DragAndDropPage extends DriverInitializer {
 	@FindBy(id="mydropzone")
 	WebElement dropArea;
 	
+	public void elementWait(){
+	wait = new WaitUtil(driver);
+	wait.WaitMethod(draggable);
+	}
+	
 public void drag()
 {
+	
 	
 	action.dragAndDrop(draggable, dropArea).build().perform();
 }

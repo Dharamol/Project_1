@@ -11,29 +11,29 @@ import pages.DragAndDropPage;
 import pages.HomePage;
 import pages.OthersPage;
 import pages.SimpleInputPage;
-import util.ReportUtil;
+
 
 public class DragAndDrop extends DriverInitializer{
 
 	WebDriver  driver;
 	HomePage homePage;
-	OthersPage drag;
+	//OthersPage drag;
 	SimpleInputPage simpleInput;
-	ReportUtil report;
 	SoftAssert softAssert;
 	DragAndDropPage dragdrop;
 	
 	@Test(priority=1)
-	public void InputFormTestCase_1() throws IOException, InterruptedException {
+	public void DragAndDrops() throws IOException, InterruptedException {
 		
 		driver=getDriver();
 		
 		homePage=new HomePage(driver);
 		homePage.clickOthers();
-		drag =new OthersPage(driver);
-		drag.clickDrag();
+		//drag =new OthersPage(driver);
+		//drag.clickDrag();
 		Thread.sleep(2000);
 		dragdrop =new DragAndDropPage(driver);
+		dragdrop.elementWait();
 		dragdrop.drag();
 		Thread.sleep(8000);
 		

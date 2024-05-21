@@ -41,12 +41,12 @@ public class VerifyShowMessage   extends DriverInitializer {
 		SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals("Your Message : dhara",reuslt+" dhara");
         
-        report = new ReportUtil();
-        report.generateAllReports();
-        report.createTestCases("VerifyTestcase");
-        report.createTestCases("VerifyFacebook");
-        report.createTestCases("Verifyshowmessage");
-        report.extendreportFlush();
+//        report = new ReportUtil();
+//        report.generateAllReports();
+//        report.createTestCases("VerifyTestcase");
+//        report.createTestCases("VerifyFacebook");
+//        report.createTestCases("Verifyshowmessage");
+//        report.extendreportFlush();
         
        
 	}

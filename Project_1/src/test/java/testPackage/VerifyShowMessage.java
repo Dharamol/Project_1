@@ -22,7 +22,7 @@ public class VerifyShowMessage   extends DriverInitializer {
 	ReportUtil report;
 	SoftAssert softAssert;
 	
-	@Test(priority=1)
+	@Test
 	public void InputFormTestCase_1() throws IOException {
 		
 		driver=getDriver();
@@ -40,16 +40,16 @@ public class VerifyShowMessage   extends DriverInitializer {
 		softAssert= new SoftAssert();
         softAssert.assertEquals("Your Message : dhara",reuslt+" dhara");
         
-        report = new ReportUtil();
-        report.generateAllReports();
-        report.createTestCases("VerifyTestcase");
-        report.extendTestlogPass();
-        report.createTestCases("VerifyFacebook");
-        report.extenTestLogInfo();
-        report.createTestCases("Verifyshowmessage");
-        report.extenTestLogInfo();
-        
-        report.extendreportFlush();
+//        report = new ReportUtil();
+//        report.generateAllReports();
+//        report.createTestCases("VerifyTestcase");
+//        report.extendTestlogPass();
+//        report.createTestCases("VerifyFacebook");
+//        report.extenTestLogInfo();
+//        report.createTestCases("Verifyshowmessage");
+//        report.extenTestLogInfo();
+//        
+//        report.extendreportFlush();
         
        
 	}
