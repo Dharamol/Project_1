@@ -9,9 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import util.WaitUtil;
+
 public class JqueryUIProgressPage {
 	
 	WebDriver driver;
+	WaitUtil wait;
 	
    
 	public JqueryUIProgressPage(WebDriver driver)
@@ -22,7 +25,7 @@ public class JqueryUIProgressPage {
 
 	@FindBy(id="downloadButton") 
 	WebElement download;
-	@FindBy(xpath="//button[text()='Close']") 
+	@FindBy(xpath="//button[text()='Close' and @class='ui-button ui-corner-all ui-widget' ]") 
 	WebElement close;
 
 	public void clickStart()
@@ -31,10 +34,12 @@ public class JqueryUIProgressPage {
 	}
 	public void clicMenu()
 	{
-		WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(100));
-		 wait.until(ExpectedConditions.elementToBeClickable(close));
+		wait = new WaitUtil(driver);
+		wait.waitClickable(close);
+		
 		
 	}
+	
 	
 	
 		

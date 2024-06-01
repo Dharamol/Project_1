@@ -33,7 +33,7 @@ public class DragAndDropPage extends DriverInitializer {
 	
 	public void elementWait(){
 	wait = new WaitUtil(driver);
-	wait.WaitMethod(draggable);
+	wait.waitMethod(draggable);
 	}
 	
 public void drag()
