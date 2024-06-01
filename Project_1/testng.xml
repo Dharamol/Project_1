@@ -10,7 +10,7 @@
 		<parameter name="Browser" value="chrome"/>	
         <classes>
 				  <class name="testPackage.AjaxFormSubmit"> </class>
-				  <class name="testPackage.DragAndDrop"> </class>
+				  
 				  <class name="testPackage.ExcelDataCompare"> </class>
 				  <class name="testPackage.FacebookLike"> </class>
 				  <class name="testPackage.FormSubmit"> </class>
