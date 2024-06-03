@@ -11,7 +11,14 @@
         <classes>
 				  <class name="testPackage.NormalSuccessVerify"> </class>
 				  
-				 
+				 <class name="testPackage.ExcelDataCompare"> </class>
+  				 <class name="testPackage.AjaxFormSubmit"> </class>
+				  <class name="testPackage.FacebookLike"> </class>
+				  <class name="testPackage.FormSubmit"> </class>
+				  <class name="testPackage.FormSubmitError"> </class>
+				  <class name="testPackage.JavaScriptAlerts"> </class>
+				  <class name="testPackage.VerifyRadioButton"> </class>
+				  <class name="testPackage.VerifyShowMessage"> </class>
 				
 					 
 				
