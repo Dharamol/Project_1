@@ -19,6 +19,9 @@ WebElement Windowpopups;
 @FindBy(xpath="//a[contains(text(),'Javascript Alert')]") 
 WebElement JavaScript;
 
+@FindBy(xpath="//a[contains(text(),'Bootstrap Alert')]") 
+WebElement BootStrapAlert;
+
 public void clickWindow()
 {
 	Windowpopups.click();
@@ -27,6 +30,11 @@ public void clickWindow()
 public void clickJavaAlert()
 {
 	JavaScript.click();
+
+}
+public void clickBootStrapAlert()
+{
+	BootStrapAlert.click();
 
 }
 }
